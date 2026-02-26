@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <Footer />
 
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-10 right-10 z-50">
+      <div className="fixed bottom-10 md:bottom-auto md:top-1/2 md:-translate-y-1/2 right-10 z-50">
         <button 
           onClick={() => window.open('https://api.whatsapp.com/send?phone=5491153199939', '_blank')}
           className="flex items-center gap-3 bg-white dark:bg-white border border-black/10 dark:border-white/10 px-4 py-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-200 transition-all group shadow-xl origin-bottom-right"

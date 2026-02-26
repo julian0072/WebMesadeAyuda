@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
               <a className="hover:text-text-base transition-colors" href="https://outlook.office.com/mail/" target="_blank">Mail</a>
               <a className="hover:text-text-base transition-colors" href="https://cas.buenosaires.gob.ar/acceso/login/login.zul?service=http://eut.gcba.gob.ar/gedo-web" target="_blank">SADE</a>
               <a className="hover:text-text-base transition-colors" href="https://sigaf.gcba.gob.ar/" target="_blank">SIGAF</a>
-              <a className="hover:text-text-base transition-colors" href="https://api.whatsapp.com/send?phone=5491153199939" target="_blank">Whatsapp</a>
+              <a className="hover:text-text-base transition-colors" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
             </div>
 
             <button 
@@ -128,7 +128,7 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
               <a className="hover:text-text-base transition-colors" href="https://outlook.office.com/mail/" target="_blank">Mail</a>
               <a className="hover:text-text-base transition-colors" href="https://cas.buenosaires.gob.ar/acceso/login/login.zul?service=http://eut.gcba.gob.ar/gedo-web" target="_blank">SADE</a>
               <a className="hover:text-text-base transition-colors" href="https://sigaf.gcba.gob.ar/" target="_blank">SIGAF</a>
-              <a className="hover:text-text-base transition-colors" href="https://api.whatsapp.com/send?phone=5491153199939" target="_blank">Whatsapp</a>
+              <a className="hover:text-text-base transition-colors" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
             </div>
           </div>
         )}

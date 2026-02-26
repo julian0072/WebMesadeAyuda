@@ -157,7 +157,7 @@ const AccessGrid: React.FC<AccessGridProps> = ({ view, onViewChange }) => {
                 </div>
               )}
 
-              <h4 className="text-[11px] md:text-xs font-bold uppercase tracking-wide text-text-base opacity-80 group-hover:opacity-100 transition-colors leading-tight">
+              <h4 className="text-[13px] md:text-sm font-bold uppercase tracking-wide text-text-base opacity-80 group-hover:opacity-100 transition-colors leading-tight">
                 {item.title}
               </h4>
             </div>
