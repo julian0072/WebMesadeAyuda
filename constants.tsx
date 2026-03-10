@@ -107,20 +107,6 @@ export const ACCESS_CHANNELS: ChannelItem[] = [
     description: 'Acceso a sistemas y aplicacione GCBA',
     url: 'https://sso.apps.buenosaires.gob.ar/assets/login.php'
   },
-  {
-    id: 'equipoba',
-    icon: 'groups',
-    title: 'EquipoBA',
-    description: 'Portal de Equipo BA',
-    url: 'https://equipoba.buenosaires.gob.ar'
-  },
-  {
-    id: 'fiche',
-    icon: 'assignment',
-    title: 'Fiche',
-    description: 'Portal Fiche',
-    url: 'https://fiche.buenosaires.gob.ar'
-  },
 ];
 
 export const GUIDE_ITEMS: ChannelItem[] = [
