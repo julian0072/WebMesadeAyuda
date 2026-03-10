@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
     <header className="w-full border-b border-primary/40 px-6 py-4 md:px-8 md:py-6 backdrop-blur-md sticky top-0 z-50 bg-bg-main/90 transition-colors duration-300">
       <nav className="mx-auto flex flex-col max-w-[1600px]">
         {/* Main Row / Mobile Header */}
-        <div className="flex items-center justify-between w-full">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between w-full gap-4 md:gap-8">
           
             {/* Logo Brand Block */}
             <div 
@@ -99,14 +99,6 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
           {/* Mobile Actions Button & Theme */}
           <div className="flex items-center gap-4 md:hidden">
             <button 
-              onClick={toggleTheme}
-              className="p-2 text-text-base"
-            >
-              <span className="material-symbols-outlined text-2xl">
-                {isDark ? 'light_mode' : 'dark_mode'}
-              </span>
-            </button>
-            <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-primary"
               aria-label="Menu"
@@ -120,44 +112,39 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="md:hidden flex flex-col items-center gap-8 py-10 animate-in fade-in slide-in-from-top-4 duration-300">
-            {/* Mobile Actions */}
-            <div className="flex flex-col items-center gap-4 w-full px-6 max-w-sm">
+          <div className="md:hidden flex flex-col items-center gap-10 py-10 animate-in fade-in slide-in-from-top-4 duration-300">
+            {/* Mobile Links Group */}
+            <div className="grid grid-cols-2 gap-x-12 gap-y-8 text-xs font-bold uppercase tracking-[0.2em] text-primary px-6 w-full max-w-sm">
               <button 
                 onClick={() => {
                   onViewChange('guides');
                   setIsMenuOpen(false);
                 }}
-                className={`text-base font-bold uppercase tracking-widest w-full py-4 rounded-full border border-black/10 dark:border-white/10 transition-all ${currentView === 'guides' ? 'bg-primary text-black' : 'text-text-base bg-white/5 dark:bg-white/5'}`}
+                className={`hover:text-text-base transition-colors text-center ${currentView === 'guides' ? 'text-text-base underline underline-offset-8 decoration-primary' : ''}`}
               >
-                Instructivos
+                INSTRUCTIVOS
               </button>
-              <a 
-                href="https://equipoba.buenosaires.gob.ar" 
-                target="_blank"
-                className="text-base font-bold uppercase tracking-widest w-full py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
-              >
-                Equipo BA
-              </a>
-              <a 
-                href="https://fiche.buenosaires.gob.ar" 
-                target="_blank"
-                className="text-base font-bold uppercase tracking-widest w-full py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
-              >
-                Fiche
-              </a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://equipoba.buenosaires.gob.ar" target="_blank">Equipo BA</a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://fiche.buenosaires.gob.ar" target="_blank">Fiche</a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://google.com" target="_blank">Google</a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://outlook.office.com/mail/" target="_blank">Mail</a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://cas.buenosaires.gob.ar/acceso/login/login.zul?service=http://eut.gcba.gob.ar/gedo-web" target="_blank">SADE</a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://sigaf.gcba.gob.ar/" target="_blank">SIGAF</a>
+              <a className="hover:text-text-base transition-colors text-center" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
             </div>
-            
+
             <div className="h-px w-20 bg-primary/20"></div>
 
-            {/* Mobile Links */}
-            <div className="flex flex-wrap justify-center gap-x-10 gap-y-8 text-sm font-bold uppercase tracking-[0.2em] text-primary">
-              <a className="hover:text-text-base transition-colors" href="https://google.com" target="_blank">Google</a>
-              <a className="hover:text-text-base transition-colors" href="https://outlook.office.com/mail/" target="_blank">Mail</a>
-              <a className="hover:text-text-base transition-colors" href="https://cas.buenosaires.gob.ar/acceso/login/login.zul?service=http://eut.gcba.gob.ar/gedo-web" target="_blank">SADE</a>
-              <a className="hover:text-text-base transition-colors" href="https://sigaf.gcba.gob.ar/" target="_blank">SIGAF</a>
-              <a className="hover:text-text-base transition-colors" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-            </div>
+            {/* Theme Toggle Icon Only - Below Links */}
+            <button 
+              onClick={toggleTheme}
+              className="flex items-center justify-center p-3 rounded-full hover:bg-white/5 transition-all text-text-base border border-white/10"
+              title={isDark ? "Modo claro" : "Modo oscuro"}
+            >
+              <span className="material-symbols-outlined text-2xl">
+                {isDark ? 'light_mode' : 'dark_mode'}
+              </span>
+            </button>
           </div>
         )}
       </nav>

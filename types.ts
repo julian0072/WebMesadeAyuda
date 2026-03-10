@@ -6,8 +6,3 @@ export interface ChannelItem {
   description: string;
   url?: string;
 }
-
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-}
