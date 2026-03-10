@@ -145,7 +145,7 @@ const AccessGrid: React.FC<AccessGridProps> = ({ view, onViewChange }) => {
             className="group cursor-pointer w-full transition-transform active:scale-95"
             onClick={() => item.url && window.open(item.url, '_blank')}
           >
-            <div className="flex flex-col items-center justify-center text-center gap-1 p-1.5 rounded-lg border border-black/10 dark:border-white/10 bg-bg-card hover:border-primary transition-all duration-300 shadow-sm dark:shadow-none min-h-[85px]">
+            <div className="flex flex-col items-center justify-center text-center gap-1 p-1.5 rounded-lg border border-black/10 dark:border-white/10 bg-bg-card hover:border-primary transition-all duration-300 shadow-sm dark:shadow-none h-[110px] md:h-auto md:min-h-[85px]">
               
               {isCustom(item.id) ? (
                 <CustomIcon id={item.id} />

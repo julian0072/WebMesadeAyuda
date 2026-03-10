@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
                   target="_blank"
                   className="text-sm font-bold uppercase tracking-widest text-primary hover:text-text-base transition-colors"
                 >
-                  EquipoBA
+                  Equipo BA
                 </a>
                 <a 
                   href="https://fiche.buenosaires.gob.ar" 
@@ -122,27 +122,27 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
         {isMenuOpen && (
           <div className="md:hidden flex flex-col items-center gap-8 py-10 animate-in fade-in slide-in-from-top-4 duration-300">
             {/* Mobile Actions */}
-            <div className="flex flex-col items-center gap-4 w-full px-4">
+            <div className="flex flex-col items-center gap-4 w-full px-6 max-w-sm">
               <button 
                 onClick={() => {
                   onViewChange('guides');
                   setIsMenuOpen(false);
                 }}
-                className={`text-base font-bold uppercase tracking-widest w-fit px-12 py-4 rounded-full border border-black/10 dark:border-white/10 transition-all ${currentView === 'guides' ? 'bg-primary text-black' : 'text-text-base bg-white/5 dark:bg-white/5'}`}
+                className={`text-base font-bold uppercase tracking-widest w-full py-4 rounded-full border border-black/10 dark:border-white/10 transition-all ${currentView === 'guides' ? 'bg-primary text-black' : 'text-text-base bg-white/5 dark:bg-white/5'}`}
               >
                 Instructivos
               </button>
               <a 
                 href="https://equipoba.buenosaires.gob.ar" 
                 target="_blank"
-                className="text-base font-bold uppercase tracking-widest w-fit px-12 py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
+                className="text-base font-bold uppercase tracking-widest w-full py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
               >
-                EquipoBA
+                Equipo BA
               </a>
               <a 
                 href="https://fiche.buenosaires.gob.ar" 
                 target="_blank"
-                className="text-base font-bold uppercase tracking-widest w-fit px-12 py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
+                className="text-base font-bold uppercase tracking-widest w-full py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
               >
                 Fiche
               </a>
