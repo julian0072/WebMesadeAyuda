@@ -62,10 +62,10 @@ const CustomIcon: React.FC<{ id: string }> = ({ id }) => {
     return (
       <svg viewBox="0 0 100 100" className={`w-10 h-10 shrink-0 ${transitionClasses}`}>
         <g className="fill-black dark:fill-primary/70 group-hover:fill-primary transition-colors duration-300">
-           {/* Pieza Superior Derecha */}
-           <path d="M45 15 L85 15 L85 55 L65 55 L65 35 L45 35 Z" />
-           {/* Pieza Inferior Izquierda */}
-           <path d="M15 45 L35 45 L35 65 L55 65 L55 85 L15 85 Z" />
+           {/* Pieza Superior Derecha con bordes redondeados */}
+           <path d="M 46 15 H 79 Q 85 15 85 21 V 54 Q 85 60 79 60 H 71 Q 65 60 65 54 V 41 Q 65 35 59 35 H 46 Q 40 35 40 29 V 21 Q 40 15 46 15 Z" />
+           {/* Pieza Inferior Izquierda con bordes redondeados */}
+           <path d="M 54 85 H 21 Q 15 85 15 79 V 46 Q 15 40 21 40 H 29 Q 35 40 35 46 V 59 Q 35 65 41 65 H 54 Q 60 65 60 71 V 79 Q 60 85 54 85 Z" />
         </g>
       </svg>
     );

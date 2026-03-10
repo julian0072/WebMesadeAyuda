@@ -58,6 +58,20 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
                 >
                   Instructivos
                 </button>
+                <a 
+                  href="https://equipoba.buenosaires.gob.ar" 
+                  target="_blank"
+                  className="text-sm font-bold uppercase tracking-widest text-primary hover:text-text-base transition-colors"
+                >
+                  EquipoBA
+                </a>
+                <a 
+                  href="https://fiche.buenosaires.gob.ar" 
+                  target="_blank"
+                  className="text-sm font-bold uppercase tracking-widest text-primary hover:text-text-base transition-colors"
+                >
+                  Fiche
+                </a>
               </div>
             </div>
 
@@ -118,6 +132,20 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
               >
                 Instructivos
               </button>
+              <a 
+                href="https://equipoba.buenosaires.gob.ar" 
+                target="_blank"
+                className="text-base font-bold uppercase tracking-widest w-fit px-12 py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
+              >
+                EquipoBA
+              </a>
+              <a 
+                href="https://fiche.buenosaires.gob.ar" 
+                target="_blank"
+                className="text-base font-bold uppercase tracking-widest w-fit px-12 py-4 rounded-full border border-black/10 dark:border-white/10 text-text-base bg-white/5 dark:bg-white/5 transition-all text-center"
+              >
+                Fiche
+              </a>
             </div>
             
             <div className="h-px w-20 bg-primary/20"></div>
