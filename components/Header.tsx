@@ -65,13 +65,6 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
                 >
                   Equipo BA
                 </a>
-                <a 
-                  href="https://fiche.buenosaires.gob.ar" 
-                  target="_blank"
-                  className="text-sm font-bold uppercase tracking-widest text-primary hover:text-text-base transition-colors"
-                >
-                  Fiche
-                </a>
               </div>
             </div>
 
@@ -125,7 +118,6 @@ const Header: React.FC<HeaderProps> = ({ onViewChange, currentView }) => {
                 INSTRUCTIVOS
               </button>
               <a className="hover:text-text-base transition-colors text-center" href="https://equipoba.buenosaires.gob.ar" target="_blank">Equipo BA</a>
-              <a className="hover:text-text-base transition-colors text-center" href="https://fiche.buenosaires.gob.ar" target="_blank">Fiche</a>
               <a className="hover:text-text-base transition-colors text-center" href="https://google.com" target="_blank">Google</a>
               <a className="hover:text-text-base transition-colors text-center" href="https://outlook.office.com/mail/" target="_blank">Mail</a>
               <a className="hover:text-text-base transition-colors text-center" href="https://cas.buenosaires.gob.ar/acceso/login/login.zul?service=http://eut.gcba.gob.ar/gedo-web" target="_blank">SADE</a>
