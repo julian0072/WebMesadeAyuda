@@ -59,11 +59,11 @@ export const ACCESS_CHANNELS: ChannelItem[] = [
     url: 'http://10.10.8.36:5252/Account/Login?ReturnUrl=%2f'
   },
   {
-    id: 'ba-obras',
-    icon: 'construction',
-    title: 'BA-Obras',
-    description: 'Portal de Gestión de Obras',
-    url: 'https://buenosairesobras.dguiaf-gcba.gov.ar//Default.aspx'
+    id: 'equipo-ba',
+    icon: 'groups',
+    title: 'Equipo BA',
+    description: 'Portal del empleado GCBA',
+    url: 'https://equipoba.buenosaires.gob.ar'
   },
   {
     id: 'ba-compras',
